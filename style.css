@@ -1,0 +1,85 @@
+body {
+	box-sizing: border-box;
+	background-color: rgb(214, 214, 214);
+}
+.container {
+	padding-top: 5rem;
+	width: 800px;
+	margin: 0 auto;
+}
+.card {
+	border-radius: 5px;
+	background: #fff;
+	padding: 1rem;
+}
+.btn {
+	margin-right: 20px;
+	cursor: pointer;
+	border: none;
+	padding: 10px;
+	background-color: rgb(88, 88, 88);
+	color: #fff;
+}
+input[type="file"] {
+	display: none;
+}
+.preview {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.5rem;
+}
+.preview-image {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 0.5rem;
+	margin-right: 0.5rem;
+}
+.preview-image img {
+	width: 180px;
+	height: auto;
+}
+.preview-image:hover .preview-remove {
+	opacity: 1;
+}
+.preview-image:hover .preview-info {
+	bottom: 0;
+}
+.preview-remove {
+	opacity: 0;
+	transition: opacity 0.22s ease;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.preview-info {
+	position: absolute;
+	right: 0;
+	bottom: -4;
+	left: 0;
+	height: 25px;
+	font-size: 0.8rem;
+	background-color: rgba(255, 255, 255, 0.562);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5px;
+	transition: bottom 0.22s;
+}
+.preview-info-progress {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	background-color: #42b983;
+	text-align: center;
+	transition: width 0.22s ease;
+	width: 30%;
+}
